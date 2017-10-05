@@ -1,0 +1,123 @@
+
+body {
+    background-image: url("../images/abstract-bw.jpeg")
+    height: 100%;
+    font-family: 'Raleway';
+    font-size: 20;
+}
+
+html {
+  height: 100%
+}
+h3{
+  text-align: left;
+  margin-left: 30;
+  color: (235, 61, 50, 0.5);
+  font-weight: bolder;
+}
+
+#logo {
+  transition: padding-left 1s;
+  padding: 150;
+}
+@media (max-width:900px) {
+  #logo {
+    transition: padding-left 1s;
+    padding-left: 10;
+    padding-right: 10;
+  }
+}
+#myphoto {
+width: 150px;
+padding: 0;
+transition: margin-left 1s;
+margin-left: 150;
+}
+@media (max-width:900px) {
+  #myphoto {
+    transition: margin-left 1s;
+    margin-left: 10;
+    margin-right: 10;
+  }
+}
+a {
+  color:rgba(235, 61, 50, 1);
+}
+
+a:hover {
+  color: (57, 125, 188, 1);
+}
+
+#header {
+  height:40px;
+  background-color:rgba(129, 127, 130, 0.5);
+  position: fixed;
+  width: 100%;
+  font-size: 24;
+  font-weight:lighter;
+
+
+
+}
+#aboutme {
+  height:200px;
+
+  background-color:rgba(255, 251, 252, 1);
+
+}
+#contacts {
+  height:300px;
+  background-color:rgba(236, 78, 32, 0.5);
+}
+#city2 {
+  /* The image used */
+height: 300px;
+  background-image: url("../images/city2.jpg");
+}
+#desk {
+  height: 300px;
+  background-image: url("../images/alesia.jpg");
+}
+#city1 {
+  height: 300px;
+  background-image: url("../images/city1.jpeg");
+}
+.parallax {
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+
+/*@media screen and (max-width: 500px) {
+  div{width:70%;}*/
+/*}*/
+/*@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid {
+    display: none;
+  }*/
+/*}*/
