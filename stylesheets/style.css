@@ -2,13 +2,29 @@
 body {
     background-image: url("../images/abstract-bw.jpeg")
     height: 100%;
-    font-family: 'Raleway';
-    font-size: 20;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12;
+    color: rgba(129, 127, 130, 1);
 }
 
-html {
-  height: 100%
+  #header {
+  height:40px;
+  background-color:rgba(129, 127, 130,0.9);
+  position: fixed;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight:200;
 }
+
+a {
+  color:rgba(131, 211, 199, 1);
+
+}
+
+a:hover {
+  color: rgba(57, 125, 188, 1);
+}
+
 h3{
   text-align: left;
   margin-left: 30;
@@ -28,11 +44,16 @@ h3{
   }
 }
 #myphoto {
-width: 150px;
+width: 200px;
 padding: 0;
 transition: margin-left 1s;
 margin-left: 150;
+margin-right: 10px;
+margin-bottom: 10px;
 }
+.border {
+  border: 1px solid rgba(235, 61, 50, 1)!important; }
+
 @media (max-width:900px) {
   #myphoto {
     transition: margin-left 1s;
@@ -40,31 +61,31 @@ margin-left: 150;
     margin-right: 10;
   }
 }
-a {
-  color:rgba(235, 61, 50, 1);
+
+.card-deck {
+  margin-left: 135;
+  margin-right: 135;
+}
+.btn {
+  background-color: rgba(131, 211, 199, 1);
+  border-color: rgba(131, 211, 199, 1);
+}
+.btn:hover {
+  background-color: rgba(129, 127, 130, 1);
+  border-color: rgba(129, 127, 130, 1);
 }
 
-a:hover {
-  color: (57, 125, 188, 1);
-}
-
-#header {
-  height:40px;
-  background-color:rgba(129, 127, 130, 0.5);
-  position: fixed;
-  width: 100%;
-  font-size: 24;
-  font-weight:lighter;
-
-
-
-}
 #aboutme {
-  height:200px;
+  min-height: 300px;
 
   background-color:rgba(255, 251, 252, 1);
-
 }
+#myinfo {
+  margin-left: 10;
+  margin-right: 150;
+  font-size: 18 ;
+}
+
 #contacts {
   height:300px;
   background-color:rgba(236, 78, 32, 0.5);
@@ -75,9 +96,10 @@ height: 300px;
   background-image: url("../images/city2.jpg");
 }
 #desk {
-  height: 300px;
+  min-height: 300px;
   background-image: url("../images/alesia.jpg");
 }
+
 #city1 {
   height: 300px;
   background-image: url("../images/city1.jpeg");
@@ -93,7 +115,7 @@ height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-video {
+/*video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -106,10 +128,10 @@ video {
  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
-}
-.stopfade {
+}*/
+/*.stopfade {
    opacity: .5;
-}
+}*/
 
 
 /*@media screen and (max-width: 500px) {
@@ -121,3 +143,18 @@ video {
     display: none;
   }*/
 /*}*/
+
+@media screen and (min-width: 320px) and (max-width:700px) {
+  .card{
+    width: 300px;
+    }
+  .card-text {
+    display: none;
+  }
+  .card-deck {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+}
