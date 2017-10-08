@@ -9,13 +9,13 @@ body {
 
   #header {
   height:40px;
-  background-color:rgba(129, 127, 130,0.9);
+  background-color:rgba(129, 127, 130,0.5);
   position: fixed;
   width: 100%;
-  font-size: 1.5rem;
-  font-weight:200;
+  font-size: 1.2rem;
 }
 
+}
 a {
   color:rgba(131, 211, 199, 1);
 
@@ -35,6 +35,7 @@ h3{
 #logo {
   transition: padding-left 1s;
   padding: 150;
+  z-index: 3;
 }
 @media (max-width:900px) {
   #logo {
@@ -79,7 +80,7 @@ margin-bottom: 10px;
 #aboutme {
   min-height: 300px;
 
-  background-color:rgba(255, 251, 252, 1);
+  background-color:rgba(255, 251, 252, 0.5);
 }
 #myinfo {
   margin-left: 10;
@@ -89,12 +90,12 @@ margin-bottom: 10px;
 
 #contacts {
   height:300px;
-  background-color:rgba(236, 78, 32, 0.5);
+  background-color:rgba(255, 255, 255, 0.8);
 }
 #city2 {
-  /* The image used */
-height: 300px;
-  background-image: url("../images/city2.jpg");
+   /*The image used */
+height: 100px;
+  /*background-image: url("../images/Very-Open-Space.jpg");*/
 }
 #desk {
   background-image: url("../images/alesia.jpg");
@@ -104,6 +105,7 @@ height: 300px;
   height: 300px;
   background-image: url("../images/city1.jpeg");
 }
+
 .parallax {
 
     min-height: 300px;
@@ -113,6 +115,49 @@ height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+position: sticky;
+    bottom: 0%;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*background: #000;*/
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 10;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+    position: sticky;
 }
 /*video {
     position: fixed;
